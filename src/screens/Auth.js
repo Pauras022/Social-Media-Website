@@ -32,7 +32,7 @@ const Auth = () => {
               color: uiState.darkMode ? "white" : "black",
             }}
           >
-            Facebook
+            SocialX
           </Typography>
           <Typography
             style={{
