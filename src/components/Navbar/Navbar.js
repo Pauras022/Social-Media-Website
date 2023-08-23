@@ -4,7 +4,7 @@ import useStyles from "./styles";
 import MiddleMenu from "./MiddleMenu";
 import RightMenu from "./RightMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faXbox } from "@fortawesome/free-brands-svg-icons";
 import {
   AppBar,
   Toolbar,
@@ -37,7 +37,7 @@ function Navbar() {
         <Toolbar>
           <div className={classes.leftMenu}>
             <FontAwesomeIcon
-              icon={faXTwitter}
+              icon={faXbox}
               size={xsScreen ? "xs" : "2x"}
               style={{
                 width: "40px",
