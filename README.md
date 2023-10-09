@@ -1,68 +1,68 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Social X - Readme
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Social X is a full-stack social media application built with the following technologies:
 
-### `npm start`
+### Backend
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Node.js:** A JavaScript runtime environment.
+- **Express.js:** A web application framework for Node.js.
+- **MongoDB:** A NoSQL database for storing application data.
+- **Socket.io:** A library for real-time communication.
+- **Azure:** The backend is hosted and deployed on the Azure cloud platform.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Frontend
 
-### `npm test`
+- **React:** A JavaScript library for building user interfaces.
+- **Material UI:** A popular React UI framework for designing the app's user interface.
+- **Google Maps:** Integrated for location sharing.
+- **Socket.io-client:** Used for real-time communication with the backend.
+- **Firebase:** Utilized for image storage.
+- **Netlify:** The frontend is hosted and deployed on Netlify.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+Social X includes a range of features to enhance the user experience:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **JWT Authentication:** Secure user authentication using JSON Web Tokens.
+- **Create Post:** Users can create and share posts with text and images.
+- **Tag Friends:** Mention and tag friends in posts and comments.
+- **Location Sharing:** Share your current location with friends.
+- **Emoji Support:** Add emojis to posts and messages.
+- **Post Seen Privacy:** Users can control who can see their posts.
+- **Pagination:** Efficiently handle large sets of data with pagination.
+- **Real-time Friend Requests:** Send, accept, and decline friend requests in real-time.
+- **Facebook Messenger Integration:** Includes a messaging feature similar to Facebook Messenger.
+- **Real-time Notifications:** Receive notifications in real-time.
+- **User Profiles:** View and edit user profiles.
+- **Settings:** Configure various app settings.
+- **Dark and Light Mode:** Choose between dark and light mode for the app's appearance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Home Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Home Page](url_to_home_page_screenshot.png)
 
-### `npm run eject`
+### Login/Signup Page
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Login/Signup Page](url_to_login_signup_page_screenshot.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Profile Page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Profile Page](url_to_profile_page_screenshot.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Settings Page
 
-## Learn More
+![Settings Page](url_to_settings_page_screenshot.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Messenger
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Messenger](url_to_messenger_page_screenshot.png)
 
-### Code Splitting
+### Friends
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+![Friends](url_to_friends_page_screenshot.png)
 
-### Analyzing the Bundle Size
+### Post
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![Post](url_to_post_page_screenshot.png)

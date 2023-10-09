@@ -11,23 +11,23 @@ export const initialPostState = {
       totalPage: 0,
     },
   },
-}
+};
 
 export const PostReducer = (state, action) => {
   switch (action.type) {
-    case 'SET_POSTS':
+    case "SET_POSTS":
       return {
         ...state,
         posts: action.payload,
-      }
+      };
 
-    case 'SET_CURRENT_POST':
+    case "SET_CURRENT_POST":
       return {
         ...state,
         post: action.payload,
-      }
+      };
 
-    case 'REMOVE_CURRENT_POST':
+    case "REMOVE_CURRENT_POST":
       return {
         ...state,
         post: {
@@ -37,15 +37,15 @@ export const PostReducer = (state, action) => {
             totalPage: 0,
           },
         },
-      }
+      };
 
-    case 'ADD_POST':
+    case "ADD_POST":
       return {
         ...state,
         posts: [action.payload, ...state.posts],
-      }
+      };
 
-    case 'POST_PAGINATION':
+    case "POST_PAGINATION":
       return {
         ...state,
         posts: [...state.posts, ...action.payload.posts],
@@ -54,9 +54,9 @@ export const PostReducer = (state, action) => {
           currentPage: action.payload.currentPage,
           totalPage: action.payload.totalPage,
         },
-      }
+      };
 
-    case 'COMMENT_PAGINATION':
+    case "COMMENT_PAGINATION":
       return {
         ...state,
         post: {
@@ -71,50 +71,50 @@ export const PostReducer = (state, action) => {
               ? [...state.post.comments, ...action.payload.comments]
               : [...action.payload.comments],
         },
-      }
+      };
 
-    case 'LIKE_UNLIKE_POST':
+    case "LIKE_UNLIKE_POST":
       let l_postIndex = state.posts.findIndex(
-        (post) => post.id == action.payload.id,
-      )
-      state.posts[l_postIndex] = action.payload
+        (post) => post.id == action.payload.id
+      );
+      state.posts[l_postIndex] = action.payload;
       if (state.post.id == action.payload.id) {
-        state.post = action.payload
+        state.post = action.payload;
       }
 
       return {
         ...state,
-      }
+      };
 
-    case 'SET_POST_COMMENTS':
+    case "SET_POST_COMMENTS":
       return {
         ...state,
         post: {
           ...state.post,
           comments: action.payload,
         },
-      }
+      };
 
-    case 'ADD_POST_COMMENT':
+    case "ADD_POST_COMMENT":
       return {
         ...state,
         post: {
           ...state.post,
           comments: [action.payload, ...state.post.comments],
         },
-      }
+      };
 
-    case 'LIKE_UNLIKE_COMMENT':
+    case "LIKE_UNLIKE_COMMENT":
       let index1 = state.post.comments.findIndex(
-        (comment) => comment.id == action.payload.id,
-      )
-      state.post.comments[index1] = action.payload
+        (comment) => comment.id == action.payload.id
+      );
+      state.post.comments[index1] = action.payload;
 
       return {
         ...state,
-      }
+      };
 
     default:
-      throw new Error(`action type ${action.type} is undefined`)
+      throw new Error(`action type ${action.type} is undefined`);
   }
-}
+};
