@@ -1,4 +1,5 @@
 # Social X - Readme
+![Live link](https://deft-centaur-bfe0e4.netlify.app/)
 
 ## Overview
 
