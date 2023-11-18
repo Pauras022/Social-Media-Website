@@ -1,5 +1,5 @@
 # Social X - Readme
-![Live link](https://deft-centaur-bfe0e4.netlify.app/)
+[Live link](https://deft-centaur-bfe0e4.netlify.app/)
 
 ## Overview
 
@@ -12,7 +12,7 @@ Social X is a full-stack social media application built with the following techn
 - **MongoDB:** A NoSQL database for storing application data.
 - **Socket.io:** A library for real-time communication.
 - **Azure:** The backend is hosted and deployed on the Azure cloud platform.
-- ![Backend repository](https://github.com/Pauras022/social_media_website_backend)
+- [Backend repository](https://github.com/Pauras022/social_media_website_backend)
 
 ### Frontend
 
